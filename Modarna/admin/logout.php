@@ -1,0 +1,5 @@
+<?php session_start();
+    if(isset($_SESSION['username'])){
+        session_destroy(); //log out
+        header('Location: login.php');
+    }
